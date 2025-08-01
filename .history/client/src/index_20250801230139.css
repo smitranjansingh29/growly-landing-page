@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.dark {
+  @apply bg-gray-900 text-gray-100;
+}
+
+/* Add this for react-toastify */
+.Toastify__toast-container {
+  z-index: 9999;
+}
+.Toastify__toast {
+  @apply rounded-lg shadow-lg;
+}
+.Toastify__toast--success {
+  @apply bg-green-500;
+}
+.Toastify__toast--error {
+  @apply bg-red-500;
+}
